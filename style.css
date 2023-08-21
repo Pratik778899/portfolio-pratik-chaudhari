@@ -1,0 +1,911 @@
+@font-face {
+    font-family: pp monument;
+    src: url(./PPMonumentExtended-Black-BF645465a1e687b.otf);
+}
+
+@font-face {
+    font-family: pp monument regular;
+    src: url(./PPMonumentExtended-Regular-BF645465a253250.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F3EF;
+}
+
+#icooo {
+    display: none;
+}
+
+#page1 {
+    width: 100%;
+    height: 100%;
+    font-family: pp monument;
+    background-color: #F4F3EF;
+}
+
+p{
+    font-family: pp monument regular;
+}
+
+#nav {
+    font-family: pp monument regular;
+    background-color: #F4F3EF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+#nav-logo h2{
+    font-family: pp monument;
+    font-weight: 300;
+}
+
+#nav-mid ul,
+li,
+a {
+    text-decoration: none;
+    color: #080808;
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+}
+
+#nav-mid a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    background-color: #000;
+    left: 0;
+}
+
+#nav-mid a:hover::after {
+    animation-name: lineranimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes lineranimation {
+    0% {
+        width: 0%;
+        left: 0%;
+    }
+
+    50% {
+        width: 100%;
+        left: 0%;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+
+#nav-right {
+    border: 1px solid #080808;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+#nav-right i {
+    margin-top: 2px;
+}
+
+/* hero hai bhai */
+
+#hero {
+    text-align: center;
+    font-size: 41px;
+    /* font-family: pp monument regular; */
+    /* font-family: mabry Pro; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    line-height: 1.1;
+    position: relative;
+}
+
+#the h1 {
+    display: inline-block;
+    padding-left: 70px;
+    padding-right: 55px;
+}
+
+#cre h1 {
+    display: inline-block;
+    padding-left: 120px;
+    padding-right: 20px;
+}
+
+#thi h1 {
+    display: inline-block;
+    padding-left: 75px;
+    padding-right: 80px;
+}
+
+#heroimaa img {
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(10px 10px 10px);
+}
+
+
+/* abb footer kei bari */
+
+#hero-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pragraph {
+    width: 29%;
+}
+
+#pragraph p {
+    margin-bottom: 20px;
+}
+
+#pragraph a {
+    border: 1px solid #080808;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-family: pp monument regular;
+}
+
+#aess {
+    height: 70px;
+    background-size: cover;
+    width: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+    /* margin-bottom: 50px; */
+}
+
+#product h1 {
+    margin-bottom: 10px;
+}
+
+#exp h1 {
+    margin-bottom: 10px;
+}
+
+#liner {
+    background-color: #080808;
+    color: #f0ead3;
+    padding: 15px 38px;
+}
+
+#liner h3 {
+    padding-left: 5px;
+    display: inline-flex;
+    padding: 10px;
+    font-size: 19px;
+}
+
+/* aab page 2 pa kaam kar na ho ga */
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #F4F3EF;
+    font-family: pp monument;
+    position: relative;
+}
+
+#master img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.5; */
+    z-index: 98;
+}
+
+#mass {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 200px;
+    /* margin-top: 300px; */
+    padding: 150px 0px;
+    background-color: #F4F3EF;
+    margin-bottom: 100px;
+
+}
+
+#lelem {
+    background-color: #F4F3EF;
+}
+
+#lelem img {
+    height: 400px;
+    background-color: #F4F3EF;
+    margin-left: 200px;
+    mix-blend-mode: darken;
+    z-index: 99;
+    position: relative;
+}
+
+#relem {
+    background-color: #F4F3EF;
+}
+
+#relem h1,
+h4 {
+    margin-bottom: 10px;
+    background-color: #F4F3EF;
+    text-transform: uppercase;
+}
+
+#relem p {
+    margin-bottom: 20px;
+    width: 90%;
+    background-color: #F4F3EF;
+}
+
+#seprate {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#prt1 li,
+#prt2 li {
+    margin-bottom: 5px;
+}
+
+#relem a {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-family: pp monument regular;
+    font-weight: 600;
+}
+
+#page3 {
+    height: 60vh;
+    width: auto;
+    background-color: #F4F3EF;
+    font-family: pp monument;
+    text-transform: capitalize;
+}
+
+
+#features-m {
+    width: 50%;
+    text-align: center;
+    margin-left: 25vw;
+}
+
+.cards-m {
+    display: flex;
+    gap: 10px;
+    margin: 50px 0px 0px 100px;
+}
+
+.cards {
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 60px 20px;
+    width: 15%;
+    border-radius: 12px;
+    background-color: #e9e9d5;
+}
+
+.cards h2 {
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.cards h3 {
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.cards p {
+    font-size: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#page4 {
+    height: 200vh;
+    width: auto;
+    background-color: #000;
+    color: white;
+    font-family: pp monument;
+    padding-left: 40px;
+    padding-right: 45px;
+    padding-top: 20px;
+}
+
+#take {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#look {
+    width: 40%;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#get a {
+    color: red;
+    border: 1px solid red;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+#get i {
+    margin-top: 3px;
+}
+
+#all-img img {
+    border-radius: 12px;
+}
+
+#img-m,
+.img1,
+.img2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+#img-m {
+    margin-top: 35px;
+}
+
+.img1 img {
+    height: 320px;
+    border: 1px solid white;
+    margin-left: 15px;
+    /* box-shadow: 2px 3px 30px white; */
+}
+
+.img2 {
+    margin-left: 50px;
+}
+
+#img-ma,
+.img3,
+.img4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.img3 img {
+    border-radius: 12px;
+    height: 450px;
+    /* padding-left: 45px; */
+    margin: 10px 0px;
+}
+
+.img4 img {
+    height: 450px;
+    margin-left: 20px;
+}
+
+
+#img-mi,
+.img5,
+.img6 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.img5 img {
+    height: 450px;
+    /* padding-left: 45px; */
+    margin: 10px 0px;
+}
+
+.img6 img {
+    height: 450px;
+    margin-left: 20px;
+}
+
+#page5 {
+    width: auto;
+    height: 100vh;
+    background-color: #F4F3EF;
+    font-family: pp monument;
+}
+
+
+
+#text-hai {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+#card-master {
+    margin-left: 380px;
+    /* border: 1px solid black; */
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    display: flex;
+    width: 50%;
+    background-color: #f0ead3;
+    box-shadow: 2px 3px 24px 0px rgba(0, 0, 0, 0.75);
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+#card-master img {
+    height: 350px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+#bas {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#bas h3 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#bas h5 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#bas p {
+    text-transform: capitalize;
+    margin-bottom: 80px;
+}
+
+#line {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+
+#link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#link i {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 23px;
+}
+
+#bgcon {
+    font-size: 107.5px;
+    /* margin-top: 50px; */
+    color: #ff8935;
+    opacity: 0.1;
+}
+
+#page6 {
+    height: 100vh;
+    width: auto;
+    background-color: #000;
+    color: white;
+    font-family: pp monument;
+}
+
+#text-hello {
+    font-size: 50px;
+    margin-left: 250px;
+    /* word-spacing: 50px; */
+}
+
+input {
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    margin-top: 10px;
+    padding: 15px 0px;
+    color: white;
+    font-family: gilroy;
+    padding-left: 10px;
+}
+
+.hh {
+    width: 38%;
+}
+
+#email {
+    /* margin-left: 350px; */
+    width: 40%;
+}
+
+#com {
+    /* margin-left: 350px; */
+    width: 40%;
+}
+
+#pro {
+    width: 87.5%;
+}
+
+#page6 a {
+    color: red;
+    border: 1px solid red;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 15px 20px;
+    margin-left: 600px;
+}
+
+#page7 {
+    background-color: gray;
+    font-family: pp monument;
+    height: auto;
+    width: auto;
+}
+
+#amaa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+#ramaa h4 {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+        font-family: pp monument;
+    }
+
+    #nav-logo h2 {
+        font-size: 7vw;
+    }
+
+    #nav-mid a {
+        display: none;
+    }
+
+    #nav-right {
+        display: none;
+        border: 0px;
+    }
+
+    #icooo {
+        display: block;
+        font-weight: 800;
+        font-size: 6vw;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: center;
+        font-size: 1.6vh;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        line-height: 1.1;
+        position: relative;
+    }
+
+    #the h1 {
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #cre h1 {
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #thi h1 {
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    #heroimaa img {
+        height: 200px;
+        margin-left: 1.8vw;
+        opacity: 0.8;
+    }
+
+    #hero-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pragraph {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #aess {
+        margin-bottom: 20px;
+    }
+
+    #product,
+    #exp {
+        margin-bottom: 20px;
+    }
+
+    #hii h3 {
+        font-size: 30px;
+    }
+
+    #liner {
+        width: 100%;
+        overflow: hidden;
+        padding: 0px 7px;
+    }
+
+    #hii {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        font-size: 35px;
+    }
+
+    #hii {
+        position: relative;
+        animation-name: scrolller;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+    }
+
+    @keyframes scrolller {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    #master {
+        display: none;
+    }
+
+    #mass {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #lelem img {
+        margin-left: 7vw;
+        margin-top: -100px;
+    }
+
+    #relem {
+        margin-left: 20px;
+        margin-top: -150px;
+    }
+
+    #page2 {
+        margin-bottom: -200px;
+        height: 100%;
+    }
+
+    #features-m {
+        width: 50%;
+    }
+
+    #seprate{
+        margin-left: -13px;
+    }
+
+
+    .cards-m {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+        margin-left: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards {
+        width: 160px;
+        padding: 60px 20px;
+    }
+
+    #page3 {
+        height: 75rem;
+        width: auto;
+    }
+
+    #features-m {
+        width: 85%;
+        margin-left: 7vw;
+        padding: 0;
+    }
+
+    .cards:nth-child(3){
+        padding: 56px 20px;
+    }
+    
+    .cards:nth-child(6){
+        padding: 42px 20px;
+    }
+
+    #all-img img {
+        width: auto;
+        height: 20vh;
+    }
+
+    #take {
+        display: flex;
+        flex-direction: column;
+        margin-left: -70px;
+        margin-right: 0;
+    }
+
+    #look {
+        width: 70%;
+        margin-bottom: 25px;
+    }
+
+    #get {
+        margin-left: -40px;
+    }
+
+    #page4 {
+        margin-right: -8.4px;
+        overflow: hidden;
+        height: 115rem;
+        width: 100%;
+    }
+
+    .img1 img,
+    .img2 img {
+        margin-left: -20px;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .img2 img {
+        margin-left: -70px;
+    }
+
+
+    .img3 img {
+        height: 35vh !important;
+        margin-bottom: 30px;
+        margin-left: -20px;
+    }
+
+    .img4 {
+        margin-left: -55px;
+        margin-bottom: 20px;
+    }
+
+    .img5 {
+        margin-left: -28px;
+        margin-bottom: 20px;
+    }
+
+    .img6 img {
+        height: 40vh !important;
+        margin-left: -25px;
+    }
+
+    #page5 {
+        height: 70rem;
+    }
+
+    #card-master {
+        margin-left: 1vw;
+        height: 49rem;
+        width: auto;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    #text-hai h2 {
+        font-size: 8vw;
+    }
+
+    #card-master img {
+        height: 45vh;
+        border-bottom-left-radius: 0px;
+    }
+
+
+    #bgcon {
+        display: none;
+    }
+
+
+    #page6 {
+        overflow: hidden;
+        height: 135vh;
+    }
+
+    #text-hello {
+        margin: 5vw;
+    }
+
+    #text-hello h1{
+        font-size: 8vh;
+    }
+
+    #login,
+    #phocom,
+    #des {
+        margin-left: -50px;
+        margin-right: 0;
+    }
+
+    #mahe {
+        width: 65%;
+    }
+
+    #email {
+        width: 65%;
+    }
+
+    #pho {
+        width: 65%;
+    }
+
+    #com {
+        width: 65%;
+    }
+
+    #pro {
+        width: 65%;
+    }
+
+    #amaa {
+        gap: 20px;
+    }
+
+
+}
